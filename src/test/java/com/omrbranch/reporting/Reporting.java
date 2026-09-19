@@ -4,7 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 
 import net.masterthought.cucumber.Configuration;
@@ -32,12 +31,21 @@ public class Reporting {
 		
 		
 	}
+
 	public void clickElement(WebElement element) {
 		element.click();
 	}
 	public void sendKeyElemnt(WebElement element,String data) {
 		element.sendKeys(data);
 	}
+	
+
+
+public String getText(WebElement element) {
+	String text = element.getText();
+	return text;
+	
+}
 	
 
 }
