@@ -31,10 +31,21 @@ public class Reporting {
 		
 		
 	}
+
+	public void clickElement(WebElement element) {
+		element.click();
+	}
+	public void sendKeyElemnt(WebElement element,String data) {
+		element.sendKeys(data);
+	}
+	
+
+
 public String getText(WebElement element) {
 	String text = element.getText();
 	return text;
 	
 }
 	
+
 }
