@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.WebElement;
+
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
@@ -29,5 +31,10 @@ public class Reporting {
 		
 		
 	}
-
+public String getText(WebElement element) {
+	String text = element.getText();
+	return text;
+	
+}
+	
 }
